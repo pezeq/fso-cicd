@@ -76,10 +76,10 @@ module.exports = [
         },
     },
     {
-        files: ["jest.setup.js"],
+        files: ["jest.setup.js", "playwright.config.js"],
         languageOptions: {
             ecmaVersion: 2018,
-            sourceType: "commonjs",
+            sourceType: "module",
             globals: {
                 ...globals.jest,
                 ...globals.node,
